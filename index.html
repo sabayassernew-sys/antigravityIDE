@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'ÉLIXIR ROYAL | عطور النخبة الفاخرة</title>
+  <meta name="description" content="تشكيلة حصرية من أرقى العطور الشرقية والفرنسية الملكية مع عروض أسعار حصرية وضمان الأصالة 100%.">
+  
+  <!-- Google Fonts: Amiri & Tajawal & Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@300;400;500;700;900&family=Cinzel:wght@500;700;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for Luxury Touch -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#C5A059',
+              goldLight: '#E8D39E',
+              goldDark: '#99732F',
+              noir: '#111111',
+              charcoal: '#1A1A1A',
+              cardBg: '#1E1E1E',
+              cream: '#FAF7F2',
+              sand: '#F2ECE4',
+              muted: '#9E978E'
+            }
+          },
+          fontFamily: {
+            sans: ['Tajawal', 'sans-serif'],
+            serif: ['Amiri', 'serif'],
+            display: ['Cinzel', 'serif']
+          },
+          boxShadow: {
+            'luxury': '0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 25px 2px rgba(197, 160, 89, 0.15)',
+            'gold-glow': '0 0 30px rgba(197, 160, 89, 0.35)',
+            'card-hover': '0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 30px rgba(197, 160, 89, 0.25)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Luxury Utilities via standard CSS layer where needed */
+    body {
+      background-color: #0d0d0e;
+      color: #FAF7F2;
+      font-family: 'Tajawal', sans-serif;
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FFF3D6 0%, #C5A059 50%, #99732F 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-border-gradient {
+      border-image: linear-gradient(to bottom right, #E8D39E, #C5A059, #644B1D) 1;
+    }
+    .shimmer-effect {
+      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0) 100%);
+      background-size: 200% 100%;
+      animation: shimmer 4s infinite;
+    }
+    @keyframes shimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+    /* Hide scrollbar for clean drawer */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-[#0e0e10] text-brand-cream selection:bg-brand-gold selection:text-brand-noir antialiased overflow-x-hidden min-h-screen flex flex-col justify-between">
+
+  <!-- ================= TOP LUXURY BANNER ================= -->
+  <div class="bg-gradient-to-r from-brand-noir via-stone-900 to-brand-noir border-b border-brand-gold/20 text-xs py-2 px-4 text-center tracking-wide text-brand-goldLight flex items-center justify-center gap-3">
+    <span class="inline-block w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+    <span>عرض ملكي لفترة محدودة: خصومات تصل إلى <strong>30%</strong> + شحن وتغليف فاخر مجاناً لجميع الطلبات</span>
+    <span class="inline-block w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+  </div>
+
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header class="sticky top-0 z-40 backdrop-blur-md bg-[#0e0e10]/85 border-b border-white/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full border border-brand-gold/40 flex items-center justify-center bg-stone-900 group-hover:border-brand-gold transition duration-300 shadow-md">
+          <i class="fa-solid fa-crown text-brand-gold text-lg group-hover:scale-110 transition-transform"></i>
+        </div>
+        <div class="text-right">
+          <span class="block font-serif text-xl sm:text-2xl font-bold tracking-wider gold-gradient-text">L'ÉLIXIR ROYAL</span>
+          <span class="block text-[10px] tracking-widest text-brand-muted uppercase font-sans -mt-1">دار العطور الملكية الفاخرة</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-stone-300">
+        <a href="#hero" class="hover:text-brand-gold transition duration-200">الرئيسية</a>
+        <a href="#products-section" class="text-brand-gold font-semibold relative after:content-[''] after:absolute after:-bottom-1 after:right-0 after:w-full after:h-[2px] after:bg-brand-gold">عطورنا المميزة</a>
+        <a href="#features" class="hover:text-brand-gold transition duration-200">مميزاتنا</a>
+        <a href="#about" class="hover:text-brand-gold transition duration-200">عن الدار</a>
+      </nav>
+
+      <!-- Cart Button & Quick Actions -->
+      <div class="flex items-center gap-4">
+        <!-- Wishlist Indicator -->
+        <button aria-label="المفضلة" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-stone-400 hover:text-brand-gold hover:border-brand-gold/40 transition">
+          <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <!-- Cart Button -->
+        <button id="open-cart-btn" class="relative group flex items-center gap-2.5 px-4 py-2 rounded-full border border-brand-gold/40 bg-stone-900/80 hover:bg-brand-gold hover:text-brand-noir transition-all duration-300 shadow-sm">
+          <i class="fa-solid fa-bag-shopping text-brand-gold group-hover:text-brand-noir text-base transition"></i>
+          <span class="text-xs font-semibold">السلة</span>
+          <span id="cart-counter" class="bg-brand-gold text-brand-noir group-hover:bg-brand-noir group-hover:text-brand-gold text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center transition-colors">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="hero" class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 border-b border-white/5">
+    <!-- Subtle Ambient Lights -->
+    <div class="absolute top-0 right-1/4 w-96 h-96 bg-brand-gold/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute bottom-0 left-1/4 w-80 h-80 bg-amber-700/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-gold/30 bg-stone-900/60 backdrop-blur-sm text-xs text-brand-goldLight mb-6">
+        <i class="fa-solid fa-gem text-brand-gold"></i>
+        <span>المجموعة الاستثنائية لعام 2026</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold font-serif max-w-4xl mx-auto leading-tight sm:leading-snug mb-6">
+        سحر الروائح النادرة يروي <span class="gold-gradient-text">حكاية فخامتك</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-stone-300 text-base sm:text-lg max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+        استكشف عبقاً استثنائياً يجمع بين أصالة العود الشرقي النادر ونقاء الزهور الفرنسية الفاتنة، بتراكيز نقية تدوم لأيام مع عروض أسعار حصرية.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="#products-section" class="px-8 py-3.5 rounded-full bg-gradient-to-r from-brand-goldDark via-brand-gold to-brand-goldLight text-brand-noir font-bold text-sm tracking-wide shadow-gold-glow hover:scale-105 transition-all duration-300 flex items-center gap-2">
+          <span>تسوق العطور الآن</span>
+          <i class="fa-solid fa-arrow-down-long text-xs"></i>
+        </a>
+        <a href="#features" class="px-8 py-3.5 rounded-full border border-white/20 bg-stone-900/40 hover:bg-white/5 hover:border-brand-gold/50 transition duration-300 text-stone-300 text-sm">
+          لماذا تختارنا؟
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 3 PERFUMES PRODUCTS SECTION ================= -->
+  <section id="products-section" class="py-20 lg:py-28 relative bg-[#0c0c0e]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-gold/30 bg-brand-gold/10 text-brand-gold text-xs font-semibold mb-3">
+          <i class="fa-solid fa-sparkles"></i>
+          <span>عروض العطور الملكية المختارة</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-4">
+          نخبة العطور بأسعار لا تُفوّت
+        </h2>
+        <div class="w-20 h-0.5 bg-gradient-to-r from-transparent via-brand-gold to-transparent mx-auto mb-4"></div>
+        <p class="text-stone-400 text-sm sm:text-base leading-relaxed">
+          ثلاثة ابتكارات عطرية فريدة تم تركيبها بأيدي كبار صانعي العطور، متوفرة الآن بتخفيضات خاصة لفترة محدودة.
+        </p>
+      </div>
+
+      <!-- 3 Products Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+
+        <!-- ================= CARD 1: عود السلطان الملكي ================= -->
+        <div class="group bg-[#16161a] border border-white/10 hover:border-brand-gold/50 rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2 shadow-luxury hover:shadow-card-hover flex flex-col justify-between">
+          
+          <!-- Image Container with Offer Badge -->
+          <div class="relative overflow-hidden bg-stone-950 aspect-square">
+            <!-- Offer Badge -->
+            <div class="absolute top-4 right-4 z-20 flex flex-col gap-1.5 items-end">
+              <span class="bg-gradient-to-r from-amber-600 to-amber-700 text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-md flex items-center gap-1">
+                <i class="fa-solid fa-tag text-[10px]"></i>
+                وفر 255 ر.س (30% خصم)
+              </span>
+              <span class="bg-stone-900/90 backdrop-blur-md border border-brand-gold/30 text-brand-goldLight text-[10px] px-2.5 py-0.5 rounded-full">
+                الأكثر طلباً
+              </span>
+            </div>
+
+            <!-- Product Image -->
+            <img 
+              src="publicimages/oud-sultan.jpg" 
+              alt="عطر عود السلطان الملكي" 
+              class="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
+              loading="lazy"
+            >
+
+            <!-- Gradient Shadow Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16161a] via-transparent to-transparent opacity-80"></div>
+          </div>
+
+          <!-- Card Content Body -->
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <!-- Ratings & Review Count -->
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-1 text-amber-400 text-xs">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <span class="text-stone-300 font-bold mr-1.5 text-xs">4.9</span>
+                </div>
+                <span class="text-stone-400 text-xs">(194 تقييماً)</span>
+              </div>
+
+              <!-- Perfume Name -->
+              <h3 class="text-xl font-bold font-serif text-white group-hover:text-brand-goldLight transition duration-300 mb-2">
+                عود السلطان الملكي
+              </h3>
+              <p class="text-xs text-brand-gold/80 mb-2 font-display tracking-widest uppercase">ROYAL ARABIAN OUD - 100ML</p>
+
+              <!-- Brief Description -->
+              <p class="text-stone-400 text-xs leading-relaxed mb-5 line-clamp-2">
+                مزيج ملكي ساحر من العود الكمبودي المعتق، تمازجه نفحات العنبر الأسود، ولمسات دافئة من الزعفران الإيراني الفاخر.
+              </p>
+            </div>
+
+            <div>
+              <!-- Pricing with Offer -->
+              <div class="bg-stone-900/90 rounded-xl p-3.5 mb-5 border border-white/5 flex items-center justify-between">
+                <div>
+                  <span class="block text-[11px] text-stone-400">السعر بعد الخصم:</span>
+                  <div class="flex items-baseline gap-1.5">
+                    <span class="text-2xl font-bold text-brand-goldLight">595</span>
+                    <span class="text-xs text-brand-gold">ر.س</span>
+                  </div>
+                </div>
+                <div class="text-left">
+                  <span class="block text-[11px] text-stone-400">السعر الأصلي:</span>
+                  <span class="text-sm text-stone-500 line-through decoration-rose-500/80">850 ر.س</span>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="grid grid-cols-2 gap-2.5">
+                <!-- Full Details Button -->
+                <button 
+                  onclick="openDetailsModal(0)"
+                  class="w-full py-2.5 px-3 rounded-xl border border-brand-gold/40 text-brand-gold hover:bg-brand-gold/10 hover:border-brand-gold text-xs font-semibold transition-all duration-300 flex items-center justify-center gap-1.5"
+                >
+                  <i class="fa-regular fa-eye"></i>
+                  <span>التفاصيل الكاملة</span>
+                </button>
+
+                <!-- Add to Cart Button -->
+                <button 
+                  onclick="addToCart(0)"
+                  class="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-brand-goldDark to-brand-gold text-brand-noir hover:brightness-110 active:scale-95 text-xs font-bold transition-all duration-300 shadow-md flex items-center justify-center gap-1.5"
+                >
+                  <i class="fa-solid fa-cart-plus"></i>
+                  <span>إضافة للسلة</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ================= CARD 2: أمبر رويال الذهبي ================= -->
+        <div class="group bg-[#16161a] border border-brand-gold/40 hover:border-brand-gold rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2 shadow-luxury hover:shadow-card-hover flex flex-col justify-between relative">
+          
+          <!-- Best Value Badge Pin -->
+          <div class="absolute top-0 inset-x-0 bg-gradient-to-r from-brand-goldDark via-brand-gold to-brand-goldDark text-brand-noir text-[10px] font-black py-0.5 text-center tracking-wider z-30 uppercase">
+            العرض الأكثر تميزاً
+          </div>
+
+          <!-- Image Container with Offer Badge -->
+          <div class="relative overflow-hidden bg-stone-950 aspect-square mt-3">
+            <!-- Offer Badge -->
+            <div class="absolute top-4 right-4 z-20 flex flex-col gap-1.5 items-end">
+              <span class="bg-gradient-to-r from-amber-600 to-amber-700 text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-md flex items-center gap-1">
+                <i class="fa-solid fa-fire text-[10px]"></i>
+                وفر 205 ر.س (30% خصم)
+              </span>
+              <span class="bg-stone-900/90 backdrop-blur-md border border-brand-gold/30 text-brand-goldLight text-[10px] px-2.5 py-0.5 rounded-full">
+                إصدار محدود
+              </span>
+            </div>
+
+            <!-- Product Image -->
+            <img 
+              src="publicimages/amber-royal.jpg" 
+              alt="عطر أمبر رويال الذهبي" 
+              class="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
+              loading="lazy"
+            >
+
+            <!-- Gradient Shadow Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16161a] via-transparent to-transparent opacity-80"></div>
+          </div>
+
+          <!-- Card Content Body -->
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <!-- Ratings & Review Count -->
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-1 text-amber-400 text-xs">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span class="text-stone-300 font-bold mr-1.5 text-xs">4.95</span>
+                </div>
+                <span class="text-stone-400 text-xs">(248 تقييماً)</span>
+              </div>
+
+              <!-- Perfume Name -->
+              <h3 class="text-xl font-bold font-serif text-white group-hover:text-brand-goldLight transition duration-300 mb-2">
+                أمبر رويال الذهبي
+              </h3>
+              <p class="text-xs text-brand-gold/80 mb-2 font-display tracking-widest uppercase">AMBRE ÉTOILÉ - 100ML</p>
+
+              <!-- Brief Description -->
+              <p class="text-stone-400 text-xs leading-relaxed mb-5 line-clamp-2">
+                سيمفونية شرقية مخملية من العنبر الذهبي، مغلفة بنفحات الفانيليا البوربون، خشب الصندل ولمسة عسلية غامرة.
+              </p>
+            </div>
+
+            <div>
+              <!-- Pricing with Offer -->
+              <div class="bg-stone-900/90 rounded-xl p-3.5 mb-5 border border-brand-gold/20 flex items-center justify-between">
+                <div>
+                  <span class="block text-[11px] text-stone-400">السعر بعد الخصم:</span>
+                  <div class="flex items-baseline gap-1.5">
+                    <span class="text-2xl font-bold text-brand-goldLight">475</span>
+                    <span class="text-xs text-brand-gold">ر.س</span>
+                  </div>
+                </div>
+                <div class="text-left">
+                  <span class="block text-[11px] text-stone-400">السعر الأصلي:</span>
+                  <span class="text-sm text-stone-500 line-through decoration-rose-500/80">680 ر.س</span>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="grid grid-cols-2 gap-2.5">
+                <!-- Full Details Button -->
+                <button 
+                  onclick="openDetailsModal(1)"
+                  class="w-full py-2.5 px-3 rounded-xl border border-brand-gold/40 text-brand-gold hover:bg-brand-gold/10 hover:border-brand-gold text-xs font-semibold transition-all duration-300 flex items-center justify-center gap-1.5"
+                >
+                  <i class="fa-regular fa-eye"></i>
+                  <span>التفاصيل الكاملة</span>
+                </button>
+
+                <!-- Add to Cart Button -->
+                <button 
+                  onclick="addToCart(1)"
+                  class="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-brand-goldDark to-brand-gold text-brand-noir hover:brightness-110 active:scale-95 text-xs font-bold transition-all duration-300 shadow-md flex items-center justify-center gap-1.5"
+                >
+                  <i class="fa-solid fa-cart-plus"></i>
+                  <span>إضافة للسلة</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ================= CARD 3: فلور دي إليزيه ================= -->
+        <div class="group bg-[#16161a] border border-white/10 hover:border-brand-gold/50 rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2 shadow-luxury hover:shadow-card-hover flex flex-col justify-between">
+          
+          <!-- Image Container with Offer Badge -->
+          <div class="relative overflow-hidden bg-stone-950 aspect-square">
+            <!-- Offer Badge -->
+            <div class="absolute top-4 right-4 z-20 flex flex-col gap-1.5 items-end">
+              <span class="bg-gradient-to-r from-rose-600 to-rose-700 text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-md flex items-center gap-1">
+                <i class="fa-solid fa-sparkle text-[10px]"></i>
+                وفر 150 ر.س (28% خصم)
+              </span>
+              <span class="bg-stone-900/90 backdrop-blur-md border border-brand-gold/30 text-brand-goldLight text-[10px] px-2.5 py-0.5 rounded-full">
+                عطر ناعم وأنيق
+              </span>
+            </div>
+
+            <!-- Product Image -->
+            <img 
+              src="publicimages/fleur-rose.jpg" 
+              alt="عطر فلور دي إليزيه الفرنسي" 
+              class="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
+              loading="lazy"
+            >
+
+            <!-- Gradient Shadow Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16161a] via-transparent to-transparent opacity-80"></div>
+          </div>
+
+          <!-- Card Content Body -->
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <!-- Ratings & Review Count -->
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-1 text-amber-400 text-xs">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span class="text-stone-300 font-bold mr-1.5 text-xs">5.0</span>
+                </div>
+                <span class="text-stone-400 text-xs">(312 تقييماً)</span>
+              </div>
+
+              <!-- Perfume Name -->
+              <h3 class="text-xl font-bold font-serif text-white group-hover:text-brand-goldLight transition duration-300 mb-2">
+                فلور دي إليزيه
+              </h3>
+              <p class="text-xs text-brand-gold/80 mb-2 font-display tracking-widest uppercase">FLEUR D'ELISE - 75ML</p>
+
+              <!-- Brief Description -->
+              <p class="text-stone-400 text-xs leading-relaxed mb-5 line-clamp-2">
+                توليفة فرنسية رقيقة من الورد الجوري والياسمين البري، مع قاعدة نقية من المسك الأبيض الحريري وقطرات البرغموت.
+              </p>
+            </div>
+
+            <div>
+              <!-- Pricing with Offer -->
+              <div class="bg-stone-900/90 rounded-xl p-3.5 mb-5 border border-white/5 flex items-center justify-between">
+                <div>
+                  <span class="block text-[11px] text-stone-400">السعر بعد الخصم:</span>
+                  <div class="flex items-baseline gap-1.5">
+                    <span class="text-2xl font-bold text-brand-goldLight">390</span>
+                    <span class="text-xs text-brand-gold">ر.س</span>
+                  </div>
+                </div>
+                <div class="text-left">
+                  <span class="block text-[11px] text-stone-400">السعر الأصلي:</span>
+                  <span class="text-sm text-stone-500 line-through decoration-rose-500/80">540 ر.س</span>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="grid grid-cols-2 gap-2.5">
+                <!-- Full Details Button -->
+                <button 
+                  onclick="openDetailsModal(2)"
+                  class="w-full py-2.5 px-3 rounded-xl border border-brand-gold/40 text-brand-gold hover:bg-brand-gold/10 hover:border-brand-gold text-xs font-semibold transition-all duration-300 flex items-center justify-center gap-1.5"
+                >
+                  <i class="fa-regular fa-eye"></i>
+                  <span>التفاصيل الكاملة</span>
+                </button>
+
+                <!-- Add to Cart Button -->
+                <button 
+                  onclick="addToCart(2)"
+                  class="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-brand-goldDark to-brand-gold text-brand-noir hover:brightness-110 active:scale-95 text-xs font-bold transition-all duration-300 shadow-md flex items-center justify-center gap-1.5"
+                >
+                  <i class="fa-solid fa-cart-plus"></i>
+                  <span>إضافة للسلة</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Trust Assurance Bar Below Cards -->
+      <div class="mt-16 pt-10 border-t border-white/10 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div class="flex items-center justify-center gap-3 p-4 rounded-xl bg-stone-900/40 border border-white/5">
+          <i class="fa-solid fa-certificate text-brand-gold text-2xl"></i>
+          <div class="text-right">
+            <h4 class="text-sm font-bold text-white">ضمان أصالة 100%</h4>
+            <p class="text-xs text-stone-400">زيوت عطرية نقية معتمدة عالمياً</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-3 p-4 rounded-xl bg-stone-900/40 border border-white/5">
+          <i class="fa-solid fa-truck-fast text-brand-gold text-2xl"></i>
+          <div class="text-right">
+            <h4 class="text-sm font-bold text-white">توصيل سريع مجاني</h4>
+            <p class="text-xs text-stone-400">لباب منزلك خلال 24 - 48 ساعة</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-3 p-4 rounded-xl bg-stone-900/40 border border-white/5">
+          <i class="fa-solid fa-gift text-brand-gold text-2xl"></i>
+          <div class="text-right">
+            <h4 class="text-sm font-bold text-white">تغليف ملكي مجاني</h4>
+            <p class="text-xs text-stone-400">صندوق فاخر وبطاقة إهداء مخصصة</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FEATURES & HERITAGE SECTION ================= -->
+  <section id="features" class="py-16 bg-[#0f0f13] border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-brand-gold text-xs font-bold tracking-widest uppercase block mb-2">عراقة وفخامة التصنيع</span>
+          <h2 class="text-3xl font-serif font-bold text-white mb-6 leading-tight">
+            لماذا يختار أصحاب الذوق الرفيع <span class="gold-gradient-text">L'ÉLIXIR ROYAL</span>؟
+          </h2>
+          <p class="text-stone-300 text-sm leading-relaxed mb-6">
+            نحن لا نبيع مجرد عطور، بل نصيغ لك حضوراً استثنائياً يترك أثراً لا يُمحى. يتم تقطير مكوناتنا من أندر المحاصيل العالمية، من غابات العود المعتقة إلى مزارع الورود في غراس الفرنسية.
+          </p>
+          <ul class="space-y-4 text-sm text-stone-300">
+            <li class="flex items-center gap-3">
+              <span class="w-6 h-6 rounded-full bg-brand-gold/20 text-brand-gold flex items-center justify-center text-xs">
+                <i class="fa-solid fa-check"></i>
+              </span>
+              <span>تركيز عالي بنسبة Eau De Parfum يدوم لأكثر من 48 ساعة.</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-6 h-6 rounded-full bg-brand-gold/20 text-brand-gold flex items-center justify-center text-xs">
+                <i class="fa-solid fa-check"></i>
+              </span>
+              <span>خالية من أي إضافات كيميائية ضارة أو مسببات الحساسية.</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="w-6 h-6 rounded-full bg-brand-gold/20 text-brand-gold flex items-center justify-center text-xs">
+                <i class="fa-solid fa-check"></i>
+              </span>
+              <span>زجاجات كريستالية مصممة يدوياً تعكس فخامة غرفتك ومكتبك.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="relative">
+          <div class="rounded-2xl overflow-hidden border border-brand-gold/30 shadow-luxury">
+            <img src="publicimages/amber-royal.jpg" alt="فخامة عطورنا" class="w-full h-80 sm:h-96 object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="absolute -bottom-5 -right-5 bg-stone-900 border border-brand-gold/40 p-5 rounded-2xl shadow-gold-glow max-w-xs text-right hidden sm:block">
+            <p class="text-brand-gold font-serif text-2xl font-bold">100%</p>
+            <p class="text-xs text-stone-300">رضا العملاء وتكرار الشراء من عملائنا في الخليج والعالم.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PERFUME DETAILS MODAL ================= -->
+  <div id="details-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden opacity-0 transition-opacity duration-300 flex items-center justify-center p-4">
+    <div id="details-modal-box" class="bg-[#18181d] border border-brand-gold/40 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-luxury transform scale-95 transition-all duration-300 p-6 sm:p-8 relative">
+      
+      <!-- Close Button -->
+      <button onclick="closeDetailsModal()" class="absolute top-5 left-5 w-9 h-9 rounded-full bg-white/10 hover:bg-brand-gold hover:text-brand-noir transition flex items-center justify-center text-stone-300 z-10">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+
+      <!-- Dynamic Content Filled by JS -->
+      <div id="modal-content" class="space-y-6">
+        <!-- Populated via openDetailsModal() -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= CART DRAWER ================= -->
+  <div id="cart-drawer-overlay" onclick="closeCart()" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300"></div>
+  <aside id="cart-drawer" class="fixed top-0 left-0 h-full w-full sm:w-96 bg-[#16161b] border-r border-brand-gold/30 z-50 transform -translate-x-full transition-transform duration-300 flex flex-col justify-between shadow-2xl">
+    
+    <!-- Drawer Header -->
+    <div class="p-6 border-b border-white/10 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-bag-shopping text-brand-gold text-lg"></i>
+        <h3 class="font-serif font-bold text-lg text-white">سلة المشتريات</h3>
+      </div>
+      <button onclick="closeCart()" class="w-8 h-8 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center text-stone-400 hover:text-white transition">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Drawer Items List -->
+    <div id="cart-items" class="flex-1 overflow-y-auto p-6 space-y-4 no-scrollbar">
+      <!-- Items dynamically rendered by JS -->
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="p-6 border-t border-white/10 bg-stone-900/80">
+      <div class="flex justify-between items-center mb-2 text-sm text-stone-400">
+        <span>المجموع الفرعي:</span>
+        <span id="cart-subtotal" class="font-bold text-white text-base">0 ر.س</span>
+      </div>
+      <div class="flex justify-between items-center mb-5 text-xs text-brand-gold">
+        <span>الشحن والتغليف:</span>
+        <span class="font-bold">مجاناً</span>
+      </div>
+      <button onclick="checkoutNotice()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-goldDark to-brand-gold text-brand-noir font-bold text-sm hover:brightness-110 active:scale-98 transition shadow-gold-glow flex items-center justify-center gap-2">
+        <span>متابعة إتمام الطلب</span>
+        <i class="fa-solid fa-arrow-left"></i>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ================= TOAST NOTIFICATION ================= -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 bg-[#1e1e24] border border-brand-gold/60 text-white px-5 py-3.5 rounded-2xl shadow-luxury transform translate-y-20 opacity-0 transition-all duration-300 flex items-center gap-3 pointer-events-none">
+    <div class="w-8 h-8 rounded-full bg-brand-gold/20 text-brand-gold flex items-center justify-center flex-shrink-0">
+      <i class="fa-solid fa-check"></i>
+    </div>
+    <div>
+      <h5 class="text-xs font-bold text-white" id="toast-title">تمت الإضافة بنجاح</h5>
+      <p class="text-[11px] text-stone-300" id="toast-msg">تمت إضافة العطر إلى سلة مشترياتك الفاخرة.</p>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="about" class="bg-black border-t border-white/10 pt-16 pb-8 text-stone-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        <!-- Col 1 -->
+        <div class="md:col-span-1">
+          <div class="flex items-center gap-2.5 mb-4">
+            <i class="fa-solid fa-crown text-brand-gold text-lg"></i>
+            <span class="font-serif text-lg font-bold text-white">L'ÉLIXIR ROYAL</span>
+          </div>
+          <p class="text-stone-400 text-xs leading-relaxed mb-4">
+            دار العطور الرائدة في تقديم أرقى الخلطات العطرية الملكية المستوحاة من سحر الشرق وأناقة باريس.
+          </p>
+          <div class="flex gap-3 text-stone-400">
+            <a href="#" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:text-brand-gold hover:border-brand-gold transition"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:text-brand-gold hover:border-brand-gold transition"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:text-brand-gold hover:border-brand-gold transition"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:text-brand-gold hover:border-brand-gold transition"><i class="fa-brands fa-snapchat"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div>
+          <h4 class="text-white font-bold mb-4 text-sm font-serif">روابط هامة</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#hero" class="hover:text-brand-gold transition">الرئيسية</a></li>
+            <li><a href="#products-section" class="hover:text-brand-gold transition">العروض الحصرية</a></li>
+            <li><a href="#features" class="hover:text-brand-gold transition">قصة عطورنا</a></li>
+            <li><a href="#" class="hover:text-brand-gold transition">سياسة الاستبدال والاسترجاع</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div>
+          <h4 class="text-white font-bold mb-4 text-sm font-serif">خدمة العملاء</h4>
+          <ul class="space-y-2.5">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-brand-gold text-[10px]"></i> <span>+966 800 123 4567</span></li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-brand-gold text-[10px]"></i> <span>concierge@elixir-royal.com</span></li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-brand-gold text-[10px]"></i> <span>الرياض - برج المملكة / باريس - شارع فاندوم</span></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div>
+          <h4 class="text-white font-bold mb-3 text-sm font-serif">النشرة البريدية الملكية</h4>
+          <p class="text-[11px] mb-3 text-stone-400">اشترك لتصلك عروضنا الحصرية وإصداراتنا المحدودة أولاً بأول.</p>
+          <form onsubmit="handleSubscribe(event)" class="flex gap-2">
+            <input type="email" required placeholder="بريدك الإلكتروني..." class="bg-stone-900 border border-white/10 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-brand-gold flex-1">
+            <button type="submit" class="bg-brand-gold text-brand-noir font-bold px-4 py-2 rounded-xl text-xs hover:brightness-110 transition">اشتراك</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="border-t border-white/5 pt-6 text-center text-stone-500 text-[11px] flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p>© 2026 L'ÉLIXIR ROYAL. جميع الحقوق محفوظة لدار العطور الملكية.</p>
+        <div class="flex gap-4">
+          <a href="#" class="hover:underline">الشروط والأحكام</a>
+          <span>•</span>
+          <a href="#" class="hover:underline">سياسة الخصوصية</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Link JavaScript Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
